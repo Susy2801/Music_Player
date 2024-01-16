@@ -33,7 +33,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="music-player">
+      <div class="music-player" id="music-player">
         <div class="audio">
           <audio id="audio-player" controls>
             <source
@@ -62,7 +62,7 @@
             </div>
             <div class="song__button">
               <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars" onclick="playlist()"></i>
               <i class="fa-solid fa-share-nodes"></i>
             </div>
           </div>
@@ -101,7 +101,11 @@
           </div>
         </div>
       </div>
-      <div class="music__playlist"></div>
+      <div class="music__playlist" id="music-playlist">
+        <div>
+          <i class="fa-solid fa-arrow-left" onclick="musicPlayer()"></i>
+        </div>
+      </div>
     </div>
     <script src="./asset/script/script.js"></script>
   </body>

@@ -53,3 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
     return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
   }
 });
+
+function playlist() {
+  var musicPlayer = document.getElementById("music-player");
+  var musicPlaylist = document.getElementById("music-playlist");
+
+  musicPlayer.classList.toggle("mp-hidden");
+  musicPlaylist.classList.toggle("mpl-show");
+}
+
+function musicPlayer() {
+  var musicPlayer = document.getElementById("music-player");
+  var musicPlaylist = document.getElementById("music-playlist");
+
+  musicPlayer.classList.remove("mp-hidden");
+  musicPlaylist.classList.remove("mpl-show");
+}
