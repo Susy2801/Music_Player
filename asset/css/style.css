@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ============================= Comon ======================== */
+
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #1c1a23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio {
+  display: none;
+}
+
+.music-player {
+  width: 828px;
+  height: 600px;
+  position: relative;
+}
+
+/* .music-main {
+  width: 828px;
+  height: 366px;
+} */
+
+.music__info {
+  background: #2b2837;
+  stroke-width: 1px;
+  stroke: #333041;
+  filter: drop-shadow(40px 30px 80px #0d0b11);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 43px;
+  position: relative;
+  z-index: 2;
+}
+.song__info {
+  display: flex;
+}
+
+.song__img {
+  width: 285px;
+  height: 285px;
+  border-radius: 40px;
+  background: #272333;
+  padding: 13px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.music__info img {
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.song__info--text {
+  margin-left: 36px;
+}
+
+.song__info--text .header {
+  color: #141024;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.05);
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.song__info--text .title {
+  color: #a39eb8;
+  font-family: "SF Pro Display";
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 67px;
+}
+
+.singer,
+.album {
+  color: #555067;
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.song__button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  font-size: 20px;
+  gap: 39px;
+}
+
+.fa-heart {
+  color: #6a44de;
+}
+
+.song__button .fa-solid {
+  border-radius: 42px;
+  background: #2b2837;
+  box-shadow: 5px 5px 15px 0px #14121e, -5px -5px 15px 0px #3b374a;
+}
+
+.music__control {
+  width: 821px;
+  height: 330px;
+  background-color: #1f1c2b;
+  stroke-width: 1px;
+  stroke: #282533;
+  filter: drop-shadow(0px 60px 100px #0e0c14);
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 4px;
+  border-radius: 40px;
+}
+
+.control__items {
+  margin-top: 150px;
+}
+
+.time-stamp-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  width: 600px;
+  height: 19.159px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 37px;
+  background: #0f0c1a;
+  box-shadow: -5px -5px 8px 0px rgba(255, 255, 255, 0.2) inset,
+    10px 10px 15px 0px #161320, -5px -5px 10px 0px #252134,
+    10px 10px 10px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 31px;
+  background: linear-gradient(
+    159deg,
+    #593ec5 26.46%,
+    rgba(99, 66, 232, 0) 116.55%
+  );
+
+  /* progress */
+  box-shadow: 1px 1px 3px 0px rgba(255, 255, 255, 0.4) inset,
+    0px 2px 3px 0px #23175a;
+  position: absolute;
+
+  border-radius: 37px;
+}
+
+.current-time,
+.total-time {
+  width: 50px;
+}
+
+.control__button {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.control__button i {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.fa-shuffle,
+.fa-repeat {
+  color: #09070f;
+}
