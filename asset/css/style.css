@@ -210,11 +210,17 @@
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
-  position: relative;
 }
 
-.fa-start:hover {
-  top: 10px;
+.fa-play,
+.fa-stop {
+  position: relative;
+  transition: 0.3s;
+}
+
+.fa-play:hover,
+.fa-stop:hover {
+  font-size: 30px;
 }
 
 .fa-shuffle,
