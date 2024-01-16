@@ -51,6 +51,7 @@
   width: 285px;
   height: 285px;
   border-radius: 40px;
+  /* border-radius: 60%; */
   background: #272333;
   padding: 13px 12px;
   display: flex;
@@ -59,6 +60,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 0.3s ease-in-out;
 }
 
 .music__info img {
@@ -66,14 +68,27 @@
   height: 260px;
   margin: auto;
   border-radius: 30px;
+  /* border-radius: 50%; */
   border: 1px solid #000;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  animation: rotate 5s linear infinite;
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .song__info--text {
   margin-left: 36px;
+  flex-shrink: 0;
 }
 
 .song__info--text .header {
@@ -158,6 +173,7 @@
   box-shadow: -5px -5px 8px 0px rgba(255, 255, 255, 0.2) inset,
     10px 10px 15px 0px #161320, -5px -5px 10px 0px #252134,
     10px 10px 10px 0px rgba(0, 0, 0, 0.1) inset;
+  cursor: pointer;
 }
 
 .progress {

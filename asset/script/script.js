@@ -5,16 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const progress = document.getElementById("progress");
   const currentTime = document.getElementById("current-time");
   const totalTime = document.getElementById("total-time");
+  const songLogo = document.getElementById("song-img");
+  const songBox = document.getElementById("song-img-out");
 
   playButton.addEventListener("click", function () {
     if (audioPlayer.paused) {
       audioPlayer.play();
       playButton.classList.remove("fa-play");
       playButton.classList.add("fa-stop");
+      songLogo.style.borderRadius = "50%";
+      songLogo.style.animation = "rotate 5s linear infinite";
+      songBox.style.borderRadius = "60%";
     } else {
       audioPlayer.pause();
       playButton.classList.add("fa-play");
       playButton.classList.remove("fa-stop");
+      songLogo.style.borderRadius = "30px";
+      songBox.style.borderRadius = "40px";
+      songLogo.style.animation = "none";
     }
   });
 
