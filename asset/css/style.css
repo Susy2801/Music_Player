@@ -210,6 +210,11 @@
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
+  position: relative;
+}
+
+.fa-start:hover {
+  top: 10px;
 }
 
 .fa-shuffle,
