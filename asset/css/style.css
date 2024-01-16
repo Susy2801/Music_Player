@@ -233,3 +233,34 @@
 .fa-repeat {
   color: #09070f;
 }
+
+.volume {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.volume-container {
+  width: 10px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.volume-container:hover {
+  width: 150px;
+}
+
+.volume i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume input {
+  /* width: 0; */
+}

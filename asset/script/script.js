@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const totalTime = document.getElementById("total-time");
   const songLogo = document.getElementById("song-img");
   const songBox = document.getElementById("song-img-out");
+  const volumeControl = document.getElementById("volume");
+
+  volumeControl.addEventListener("input", function () {
+    const volumeValue = volumeControl.value;
+    audioPlayer.volume = volumeValue / 100;
+  });
 
   playButton.addEventListener("click", function () {
     if (audioPlayer.paused) {
